@@ -1,0 +1,18 @@
+:root {
+    --colppal: #92e3a9;
+    --colsecun: #628468;
+    --collet: #999da0;
+    --colfon: #eeeeee;
+} 
+
+body {
+    background: rgb(222,246,229);
+    background: linear-gradient(332deg, rgba(222,246,229,1) 0%, rgba(255,255,255,1) 100%);
+    
+}
+
+.contenedor-ppal {
+    position: relative;
+    top: -50px;
+    padding-bottom: 50px;
+}
