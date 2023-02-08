@@ -1,0 +1,71 @@
+:root {
+    --colppal: #92e3a9;
+    --colsecun: #628468;
+    --collet: #999da0;
+}
+
+
+.encuentraProfe {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 98%;
+}
+
+.mejoraHabilidades {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 98%;
+}
+
+.textos {
+    width: 45%;
+    padding-left: 30px;
+}
+
+.textos h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.textos p {
+    color: var(--collet);
+    font-size: 25px;
+}
+
+.textos h1::after{
+    content: '.';
+    color: var(--colppal);
+    padding-left: 10px;
+}
+
+section img {
+    width: 40%;
+}
+
+/*Media Queries*/
+
+@media (min-width: 320px) and (max-width: 1120px){
+    .encuentraProfe,
+    .mejoraHabilidades {
+        flex-direction: column;
+    }
+
+    .textos{
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    .textos h1 {
+        text-align: start;
+    }
+
+    .textos p{
+        text-align: justify;
+    }
+
+    section img{
+        width: 98%;
+    }
+}

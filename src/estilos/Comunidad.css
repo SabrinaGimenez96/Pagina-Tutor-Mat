@@ -1,0 +1,64 @@
+:root {
+    --colppal: #92e3a9;
+    --colsecun: #628468;
+    --collet: #999da0;
+}
+
+.contenedorComunidad {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    width: 80%;
+    min-height: 90%;
+    border: 2px solid var(--colppal);
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+.comunidad {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contenedorComunidad h1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.contenedorComunidad h1::after {
+    content: '.';
+    color: var(--colppal);
+    padding-left: 10px;
+}
+
+/*Media Queries*/
+
+@media (min-width: 320px) and (max-width: 1120px){
+    .contenedorComunidad {
+        border: none;
+    }
+
+    .contenedorComunidad h1{
+        font-size: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .comunidad {
+        gap: 10px;
+        padding: 5px;
+    }
+}

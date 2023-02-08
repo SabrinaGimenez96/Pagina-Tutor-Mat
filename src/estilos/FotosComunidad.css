@@ -1,0 +1,20 @@
+:root {
+    --colppal: #92e3a9;
+    --colsecun: #628468;
+    --collet: #999da0;
+}
+
+.contenedorF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.contenedorF img {
+    border-radius: 50%;
+    border: 2px solid var(--colppal);
+    width: 70px;
+    margin: 5px;
+}
